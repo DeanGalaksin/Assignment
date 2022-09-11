@@ -56,7 +56,7 @@ static void MX_TIM1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void delay_us (uint16_t us)
+void delay_us (uint16_t us) //us (mikrosaniye) fonksiyonu
 {
     __HAL_TIM_SET_COUNTER(&htim1,0);  // counter degerini 0 olarak belirle
   	while (__HAL_TIM_GET_COUNTER(&htim1) < us);  // counter'in istenilen degere ulasmasini bekle
